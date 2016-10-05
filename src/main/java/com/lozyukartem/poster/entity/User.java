@@ -2,7 +2,7 @@ package com.lozyukartem.poster.entity;
 
 public class User {
     private int id;
-    private String username;
+    private String login;
     private String password;
     private String firstname;
     private String secondname;
@@ -17,12 +17,12 @@ public class User {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getLogin() {
+        return login;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setLogin(String login) {
+        this.login = login;
     }
 
     public String getPassword() {
@@ -73,7 +73,7 @@ public class User {
         User user = (User) o;
 
         if (getId() != user.getId()) return false;
-        if (getUsername() != null ? !getUsername().equals(user.getUsername()) : user.getUsername() != null)
+        if (getLogin() != null ? !getLogin().equals(user.getLogin()) : user.getLogin() != null)
             return false;
         if (getPassword() != null ? !getPassword().equals(user.getPassword()) : user.getPassword() != null)
             return false;
@@ -90,7 +90,7 @@ public class User {
     @Override
     public int hashCode() {
         int result = getId();
-        result = 31 * result + (getUsername() != null ? getUsername().hashCode() : 0);
+        result = 31 * result + (getLogin() != null ? getLogin().hashCode() : 0);
         result = 31 * result + (getPassword() != null ? getPassword().hashCode() : 0);
         result = 31 * result + (getFirstname() != null ? getFirstname().hashCode() : 0);
         result = 31 * result + (getSecondname() != null ? getSecondname().hashCode() : 0);

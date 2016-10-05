@@ -20,7 +20,7 @@
     <![endif]-->
 </head>
 <body>
-<h1>Hi, body!</h1>
+<h1>Hi, ${user.login}!</h1>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

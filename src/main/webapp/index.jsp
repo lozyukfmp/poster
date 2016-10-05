@@ -29,8 +29,8 @@
                             <input type="hidden" name="command" value="login">
                         </div>
                         <div class="form-group">
-                            <label for="username">Username:</label>
-                            <input class="form-control" name="login" id="username" required>
+                            <label for="login">Username:</label>
+                            <input class="form-control" name="login" id="login" required>
                         </div>
                         <div class="form-group">
                             <label for="pwd">Password:</label>

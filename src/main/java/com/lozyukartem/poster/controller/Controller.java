@@ -40,7 +40,6 @@ public class Controller extends HttpServlet {
 
         String url = command.execute(req);
 
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher(req.getContextPath() + url);
-        requestDispatcher.forward(req, resp);
+        resp.sendRedirect(req.getContextPath() + "/Controller?command=" + url);
     }
 }

@@ -1,8 +1,6 @@
 package com.lozyukartem.poster.command;
 
-import com.lozyukartem.poster.command.impl.ChangeLocaleCommand;
-import com.lozyukartem.poster.command.impl.LoginCommand;
-import com.lozyukartem.poster.command.impl.LogoutCommand;
+import com.lozyukartem.poster.command.impl.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,6 +14,8 @@ public final class CommandFactory {
         commands.put(CommandName.LOGIN, new LoginCommand());
         commands.put(CommandName.LOGOUT, new LogoutCommand());
         commands.put(CommandName.CHANGE_LOCALE, new ChangeLocaleCommand());
+        commands.put(CommandName.GET_LOGIN_PAGE, new GetLoginPageCommand());
+        commands.put(CommandName.GET_HOME_PAGE, new GetHomePageCommand());
     }
 
     public static CommandFactory getInstance() {
