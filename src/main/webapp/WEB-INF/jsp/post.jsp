@@ -80,7 +80,28 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
-<h1>Hi, ${user.login}!</h1>
+<div class="container">
+    <div class="col-md-4 col-md-offset-4">
+        <form action="/Controller" method="post">
+            <div class="form-group">
+                <input type="hidden" class="form-control" name="command" value="send-post">
+            </div>
+            <div class="form-group">
+                <label for="comment">Post:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="permition">Read</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="permition">Read/Comment</label>
+            </div>
+            <button type="submit" class="btn btn-primary">
+                Make post <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+            </button>
+        </form>
+    </div>
+</div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

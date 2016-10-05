@@ -16,6 +16,7 @@ public final class CommandFactory {
         commands.put(CommandName.CHANGE_LOCALE, new ChangeLocaleCommand());
         commands.put(CommandName.GET_LOGIN_PAGE, new GetLoginPageCommand());
         commands.put(CommandName.GET_HOME_PAGE, new GetHomePageCommand());
+        commands.put(CommandName.GET_POST_PAGE, new GetPostPageCommand());
     }
 
     public static CommandFactory getInstance() {

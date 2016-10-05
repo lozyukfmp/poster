@@ -5,5 +5,6 @@ public final class PageUtil {
 
     public static final String HOME_PAGE = "/home.jsp";
     public static final String LOGIN_PAGE = "/index.jsp";
+    public static final String POST_PAGE = "/WEB-INF/jsp/post.jsp";
 
 }
