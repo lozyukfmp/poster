@@ -12,7 +12,7 @@ public interface PostDao {
 
     Post addPost(Post post);
 
-    Post deletePost(int postId);
+    void deletePost(int postId);
 
-    Post editPost(int postId);
+    void editPost(Post post);
 }
